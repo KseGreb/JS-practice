@@ -22,3 +22,15 @@ function result(){
         par.style.display = "none"
     }
 }
+
+
+const str = "In West Philadephia, born and raised.";
+const words = str.split("");
+
+function getVowelCount() {
+    return words.filter(word => word.match(/[aeiou]/gi)).length;
+}
+
+console.log(getVowelCount());
+
+
